@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Gyanti Multiservices</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .career-hero {
+      background: linear-gradient(rgba(10, 47, 31, 0.75), rgba(10, 47, 31, 0.75)), url('file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_logistics_team_1778663912740.png');
+      background-size: cover;
+      background-position: center;
+      padding: 10rem 5% 6rem;
+      text-align: center;
+      color: white;
+    }
+
+    .career-hero h1 {
+      color: white;
+    }
+
+    .job-list {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 5%;
+    }
+
+    .job-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      background: white;
+      border-radius: 30px;
+      transition: var(--transition);
+      border-left: 6px solid var(--primary-green);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .job-card:hover {
+      transform: translateX(10px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .job-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-meta {
+      display: flex;
+      gap: 1.5rem;
+      color: var(--soft-gray);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .job-meta span i {
+      color: var(--primary-green);
+      margin-right: 6px;
+    }
+
+    .culture-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 8rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .culture-img {
+      width: 100%;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 800px) {
+      .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+
+      .culture-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+      <div class="logo-text">
+        <h1>Gyanti Multiservices</h1>
+        <span>Pvt. Ltd. | Bio-Diesel Expert</span>
+      </div>
+    </a>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="products.html">Products <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-btn">Get Quote</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="career-hero">
+      <div class="reveal">
+        <p style="color: var(--gold-light); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">Join the
+          Green Revolution</p>
+        <h1>Build Your Future with Gyanti</h1>
+        <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">We are looking for dedicated professionals who want
+          to make a real difference in India's energy landscape.</p>
+      </div>
+    </section>
+
+    <section class="culture-section">
+      <div class="reveal">
+        <h2 style="font-size: 2.8rem; margin-bottom: 1.5rem;">Life at Gyanti Multiservices</h2>
+        <p style="margin-bottom: 1.5rem;">At Gyanti, we believe in a culture of technical excellence and environmental
+          responsibility. Our team members aren't just employees; they are innovators working on the front lines of
+          renewable energy.</p>
+        <p>From our state-of-the-art laboratory in Bharuwa Samerpur to our PAN India logistics network, every role
+          offers a chance to grow and lead.</p>
+        <div style="margin-top: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div class="card" style="padding: 1.5rem; text-align: center;">
+            <i class="fas fa-heartbeat" style="font-size: 2rem; color: var(--primary-green); margin-bottom: 10px;"></i>
+            <h4>Health First</h4>
+          </div>
+          <div class="card" style="padding: 1.5rem; text-align: center;">
+            <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-green); margin-bottom: 10px;"></i>
+            <h4>Fast Growth</h4>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img
+          src="file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_factory_entrance_gate_1778663958445.png"
+          class="culture-img" alt="Company Gate">
+      </div>
+    </section>
+
+    <section class="job-list">
+      <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+        <h2>Open Positions</h2>
+        <div class="gold-line" style="margin: 1rem auto;"></div>
+      </div>
+
+      <div class="card job-card reveal">
+        <div class="job-info">
+          <h3>Production Manager</h3>
+          <p style="margin: 0.5rem 0 1rem; color: var(--soft-gray);">Manage the transesterification reactor cycles and
+            quality oversight at the UP plant.</p>
+          <div class="job-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, UP</span>
+            <span><i class="fas fa-wallet"></i> Competitive Pay</span>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Apply Now</a>
+      </div>
+
+      <div class="card job-card reveal">
+        <div class="job-info">
+          <h3>QC Lab Analyst</h3>
+          <p style="margin: 0.5rem 0 1rem; color: var(--soft-gray);">Conduct ASTM standard testing on B100 and Gyanti
+            Urea (DEF) batches.</p>
+          <div class="job-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, UP</span>
+            <span><i class="fas fa-flask"></i> Technical Role</span>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Apply Now</a>
+      </div>
+
+      <div class="card job-card reveal">
+        <div class="job-info">
+          <h3>Logistics Coordinator</h3>
+          <p style="margin: 0.5rem 0 1rem; color: var(--soft-gray);">Manage the tanker fleet and delivery schedules
+            across North India.</p>
+          <div class="job-meta">
+            <span><i class="fas fa-map-marker-alt"></i> PAN India Network</span>
+            <span><i class="fas fa-truck"></i> Logistics</span>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-links">
+        <div class="logo footer-logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <div class="logo-text">
+            <h1 style="color: white;">Gyanti</h1>
+            <span style="color: var(--gold-light);">Multiservices</span>
+          </div>
+        </div>
+        <p>Leading the green energy revolution in India with innovative bio-fuel and industrial chemical solutions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, UP</p>
+        <p><i class="fas fa-phone"></i> +91 73111 12659</p>
+        <p><i class="fas fa-envelope"></i> contact@gyanti.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gyanti Multiservices Pvt. Ltd. | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 150) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if(mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    }
+
+    // Mobile Dropdown Toggle
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          drop.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

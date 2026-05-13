@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact Reports | Gyanti Multiservices</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .report-hero {
+      background: linear-gradient(rgba(27, 94, 42, 0.8), rgba(27, 94, 42, 0.8)), url('file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_factory_solar_panels_1778663844286.png');
+      background-size: cover;
+      background-position: center;
+      padding: 10rem 5% 6rem;
+      text-align: center;
+      color: white;
+    }
+
+    .report-hero h1 {
+      color: white;
+    }
+
+    .chart-container {
+      margin-top: 2rem;
+      height: 250px;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 20px;
+      background: #f8fcf8;
+      border-radius: 20px;
+    }
+
+    .bar {
+      flex: 1;
+      background: var(--primary-green);
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      transition: height 1s ease-in-out;
+    }
+
+    .bar:nth-child(even) {
+      background: var(--brand-gold);
+    }
+
+    .bar::before {
+      content: attr(data-value);
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+
+    .bar::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .report-section {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 6rem;
+    }
+
+    .report-img {
+      border-radius: 30px;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 900px) {
+      .report-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+      <div class="logo-text">
+        <h1>Gyanti Multiservices</h1>
+        <span>Pvt. Ltd. | Bio-Diesel Expert</span>
+      </div>
+    </a>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="products.html">Products <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-btn">Get Quote</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="report-hero">
+      <div class="reveal">
+        <p style="color: var(--gold-light); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">
+          Transparency & Impact</p>
+        <h1>Annual Sustainability Analysis</h1>
+        <p style="max-width: 800px; margin: 0 auto; opacity: 0.9;">Documenting our environmental contribution and
+          financial performance for a greener tomorrow.</p>
+      </div>
+    </section>
+
+    <section style="padding: 6rem 5%; max-width: 1400px; margin: 0 auto;">
+      <div class="report-section">
+        <div class="reveal">
+          <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Reducing India's Carbon Footprint</h2>
+          <p>Our B100 Bio-Diesel has shown a remarkable **70% reduction** in direct carbon emissions compared to
+            standard petroleum diesel. By utilizing agricultural waste and non-edible oils, we are preventing thousands
+            of tons of CO2 from entering the atmosphere every year.</p>
+          <div class="chart-container">
+            <div class="bar" data-label="Standard" data-value="0%" style="height: 5%;"></div>
+            <div class="bar" data-label="B20 Blend" data-value="15%" style="height: 30%;"></div>
+            <div class="bar" data-label="B50 Blend" data-value="40%" style="height: 60%;"></div>
+            <div class="bar" data-label="Gyanti B100" data-value="70%" style="height: 90%;"></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_feedstock_fields_1778663890956.png"
+            class="report-img" alt="Environmental Impact">
+        </div>
+      </div>
+
+      <div class="report-section">
+        <div class="reveal" style="order: 2;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Financial Growth & Expansion</h2>
+          <p>Gyanti Multiservices has seen an unprecedented growth rate of **15% CAGR** over the last 3 years. With our
+            annual revenue reaching ₹116 Crore in FY 2024-25, we are reinvesting heavily into expanding our logistics
+            network and refining our transesterification technology.</p>
+          <div class="chart-container">
+            <div class="bar" data-label="FY22" data-value="85 Cr" style="height: 60%;"></div>
+            <div class="bar" data-label="FY23" data-value="98 Cr" style="height: 75%;"></div>
+            <div class="bar" data-label="FY24" data-value="104 Cr" style="height: 85%;"></div>
+            <div class="bar" data-label="FY25" data-value="116 Cr" style="height: 100%;"></div>
+          </div>
+        </div>
+        <div class="reveal" style="order: 1;">
+          <img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_truck_fleet_highway_1778663937439.png"
+            class="report-img" alt="Financial Growth">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-links">
+        <div class="logo footer-logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <div class="logo-text">
+            <h1 style="color: white;">Gyanti</h1>
+            <span style="color: var(--gold-light);">Multiservices</span>
+          </div>
+        </div>
+        <p>Leading the green energy revolution in India with innovative bio-fuel and industrial chemical solutions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, UP</p>
+        <p><i class="fas fa-phone"></i> +91 73111 12659</p>
+        <p><i class="fas fa-envelope"></i> contact@gyanti.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gyanti Multiservices Pvt. Ltd. | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 150) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if(mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    }
+
+    // Mobile Dropdown Toggle
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          drop.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

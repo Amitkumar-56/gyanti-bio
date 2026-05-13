@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio-Diesel B100 | Gyanti Multiservices</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .product-details-hero {
+      padding: 12rem 5% 8rem;
+      background: linear-gradient(135deg, var(--deep-green) 0%, var(--primary-green) 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .product-details-hero h1 {
+      color: white;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      padding: 8rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .product-main-img {
+      width: 100%;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .spec-table th,
+    .spec-table td {
+      padding: 1.2rem 2rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .spec-table th {
+      background: #f8f9f8;
+      color: var(--primary-green);
+      font-weight: 700;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .benefit-item {
+      text-align: center;
+      padding: 2rem;
+      background: var(--off-white);
+      border-radius: 20px;
+    }
+
+    .benefit-item i {
+      font-size: 2.5rem;
+      color: var(--brand-gold);
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .product-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+      <div class="logo-text">
+        <h1>Gyanti Multiservices</h1>
+        <span>Pvt. Ltd. | Bio-Diesel Expert</span>
+      </div>
+    </a>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="products.html" class="active">Products <i class="fas fa-chevron-down"
+            style="font-size: 0.7rem;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-btn">Get Quote</a></li>
+    </ul>
+  </nav>
+
+  <header class="product-details-hero">
+    <div class="reveal">
+      <h6>Certified Premium Fuel</h6>
+      <h1>Bio-Diesel B100</h1>
+      <p style="font-size: 1.2rem; opacity: 0.9;">The cleanest burning fuel for a sustainable industrial future.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-layout">
+      <div class="reveal">
+        <img
+          src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667754302.jpg"
+          alt="Gyanti Bio-Diesel Expert" class="product-main-img">
+      </div>
+      <div class="reveal">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Pure Energy. <br><span
+            style="color: var(--primary-green);">Zero Compromise.</span></h2>
+        <p>Our B100 Bio-Diesel is 100% pure ASTM D6751 certified fuel derived from renewable resources. It offers
+          superior lubricity and a higher cetane rating than conventional diesel, ensuring better engine performance
+          while drastically reducing your carbon footprint.</p>
+
+        <div class="benefit-grid">
+          <div class="benefit-item">
+            <i class="fas fa-smog"></i>
+            <h5>70% Less CO2</h5>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-oil-can"></i>
+            <h5>Better Lubricity</h5>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-bolt"></i>
+            <h5>Higher Cetane</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--white); padding: 8rem 5%;">
+      <div class="section-header reveal">
+        <h2>Technical Specifications</h2>
+        <p>Engineered for maximum efficiency and compliance with international standards.</p>
+      </div>
+      <table class="spec-table reveal" style="max-width: 1000px; margin: 0 auto;">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>ASTM D6751 Limit</th>
+            <th>Gyanti B100 Typical</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flash Point</td>
+            <td>Min 93°C</td>
+            <td>130°C</td>
+          </tr>
+          <tr>
+            <td>Water & Sediment</td>
+            <td>Max 0.05%</td>
+            <td>0.02%</td>
+          </tr>
+          <tr>
+            <td>Kinematic Viscosity @ 40°C</td>
+            <td>1.9 - 6.0 mm²/s</td>
+            <td>4.2 mm²/s</td>
+          </tr>
+          <tr>
+            <td>Sulfated Ash</td>
+            <td>Max 0.02%</td>
+            <td>0.005%</td>
+          </tr>
+          <tr>
+            <td>Cetane Number</td>
+            <td>Min 47</td>
+            <td>52+</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="cta-banner reveal">
+      <h2>Power Your Fleet with B100</h2>
+      <p>Contact us for bulk supply and customized logistics solutions.</p>
+      <a href="contact.html" class="btn btn-primary"
+        style="background: var(--brand-gold); color: var(--deep-green);">Get a Quote <i
+          class="fas fa-paper-plane"></i></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-links">
+        <div class="logo footer-logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <div class="logo-text">
+            <h1 style="color: white;">Gyanti</h1>
+            <span style="color: var(--gold-light);">Multiservices</span>
+          </div>
+        </div>
+        <p>Leading the green energy revolution in India with innovative bio-fuel and industrial chemical solutions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, UP</p>
+        <p><i class="fas fa-phone"></i> +91 73111 12659</p>
+        <p><i class="fas fa-envelope"></i> contact@gyanti.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gyanti Multiservices Pvt. Ltd. | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 150) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if(mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    }
+
+    // Mobile Dropdown Toggle
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          drop.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

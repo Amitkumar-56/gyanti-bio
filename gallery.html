@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Gyanti Multiservices</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 5%;
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        padding: 2rem 3%;
+        gap: 1rem;
+      }
+      .img-box {
+        height: 250px !important;
+      }
+    }
+
+    .gallery-item {
+      background: white;
+      padding: 15px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-box {
+      width: 100%;
+      height: auto;
+      min-height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      background: #f0f7ee;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Internal Watermark Style */
+    .internal-watermark {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(27, 94, 42, 0.8);
+      color: #e6b422;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      z-index: 10;
+      border: 1px solid rgba(230, 180, 34, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .top-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary-green);
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .caption {
+      padding: 1.5rem 0.5rem 0.5rem;
+    }
+
+    .caption h3 {
+      font-size: 1.3rem;
+      color: var(--deep-green);
+      margin-bottom: 5px;
+    }
+
+    .caption p {
+      color: var(--soft-gray);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+      <div class="logo-text">
+        <h1>Gyanti Multiservices</h1>
+        <span>Pvt. Ltd. | Bio-Diesel Expert</span>
+      </div>
+    </a>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li class="mobile-menu-header">
+        <span>Navigation Menu</span>
+        <div class="close-menu" id="close-menu"><i class="fas fa-times"></i></div>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="products.html">Products <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-btn">Get Quote</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero-page" style="text-align: center;">
+      <div class="reveal">
+        <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">
+          Manufacturing & Logistics</p>
+        <h1>Our World-Class Infrastructure</h1>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--soft-gray);">A visual tour of our production units,
+          storage hubs, and supply chain.</p>
+      </div>
+    </section>
+
+    <div class="gallery-grid">
+      <!-- User Provided: Bio-Diesel Banner -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OFFICIAL BANNER</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667754302.jpg">
+        </div>
+        <div class="caption">
+          <h3>Bio-Diesel Expert Banner</h3>
+          <p>Official corporate branding for Gyanti Bio-Diesel.</p>
+        </div>
+      </div>
+      <!-- User Provided: DEF Urea Banner -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OFFICIAL BANNER</div>
+        <div class="internal-watermark">GYANTI DEF UREA</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667949078.jpg">
+        </div>
+        <div class="caption">
+          <h3>DEF Urea Expert Banner</h3>
+          <p>Official corporate branding for Gyanti DEF Urea solution.</p>
+        </div>
+      </div>
+      <!-- User Provided: Grease Banner -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OFFICIAL BANNER</div>
+        <div class="internal-watermark">GYANTI GREASE</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778668157127.jpg">
+        </div>
+        <div class="caption">
+          <h3>Premium Grease Expert Banner</h3>
+          <p>Official corporate branding for Gyanti Lubricating Grease.</p>
+        </div>
+      </div>
+      <!-- User Provided: Base Oil Banner -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OFFICIAL BANNER</div>
+        <div class="internal-watermark">GYANTI BASE OIL</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778668717837.jpg">
+        </div>
+        <div class="caption">
+          <h3>Industrial Base Oil Banner</h3>
+          <p>Official corporate branding for Gyanti Lubricant Base Stock.</p>
+        </div>
+      </div>
+      <!-- User Provided: N95 Mask Banner -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OFFICIAL BANNER</div>
+        <div class="internal-watermark">GYANTI SAFETY</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778668991604.jpg">
+        </div>
+        <div class="caption">
+          <h3>Industrial N95 Mask Banner</h3>
+          <p>Official corporate branding for Gyanti Industrial Safety Equipment.</p>
+        </div>
+      </div>
+      <!-- User Provided: Manufacturing Banner -->
+      <div class="gallery-item reveal" style="grid-column: 1 / -1;">
+        <div class="top-badge">FACILITY OVERVIEW</div>
+        <div class="internal-watermark">GYANTI MANUFACTURING</div>
+        <div class="img-box" style="height: auto;"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778668341899.jpg"
+            style="height: auto;"></div>
+        <div class="caption">
+          <h3>Manufacturing & Process Infographic</h3>
+          <p>Comprehensive overview of our production facility, waste recycling, and 6-step process.</p>
+        </div>
+      </div>
+      <!-- User Provided: DEF Bucket -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">RETAIL PRODUCT</div>
+        <div class="internal-watermark">GYANTI DEF</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667496511.png"
+            style="object-fit: contain; background: #fff;"></div>
+        <div class="caption">
+          <h3>DEF 20L Bucket</h3>
+          <p>Standard retail packaging for Diesel Exhaust Fluid.</p>
+        </div>
+      </div>
+      <!-- User Provided: IBC Tank -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">BULK SUPPLY</div>
+        <div class="internal-watermark">GYANTI DEF</div>
+        <div class="img-box"><img
+            src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667512974.png"
+            style="object-fit: contain; background: #fff;"></div>
+        <div class="caption">
+          <h3>1000L IBC Tank</h3>
+          <p>Bulk DEF storage for large-scale fleet operations.</p>
+        </div>
+      </div>
+
+      <!-- 01 Factory Area -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">FACTORY AREA</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"></div>
+        <div class="caption">
+          <h3>Main Manufacturing Unit</h3>
+          <p>State-of-the-art bio-diesel plant area.</p>
+        </div>
+      </div>
+      <!-- 02 Under Production -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">UNDER PRODUCTION</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img src="https://picsum.photos/seed/gyantilab/1000/800"></div>
+        <div class="caption">
+          <h3>Quality Control Lab</h3>
+          <p>Real-time testing during production cycles.</p>
+        </div>
+      </div>
+      <!-- 03 Mal Taiyar Hai (Ready Goods) -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">READY FOR DISPATCH</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img src="https://picsum.photos/seed/gyantistock/1000/800"></div>
+        <div class="caption">
+          <h3>Storage Reserves</h3>
+          <p>Bulk B100 Bio-Diesel ready for shipping.</p>
+        </div>
+      </div>
+      <!-- 04 Loading in Truck -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">LOADING AREA</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"></div>
+        <div class="caption">
+          <h3>Tanker Loading</h3>
+          <p>Bio-diesel being loaded into industrial tankers.</p>
+        </div>
+      </div>
+      <!-- 05 Supply Chain -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">SUPPLY CHAIN</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img src="https://picsum.photos/seed/gyantitruck/1000/800"></div>
+        <div class="caption">
+          <h3>Highway Distribution</h3>
+          <p>Our fleet delivering fuel across Northern India.</p>
+        </div>
+      </div>
+      <!-- 06 Storage Hub -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">STORAGE HUB</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"></div>
+        <div class="caption">
+          <h3>Industrial Silos</h3>
+          <p>Massive storage capacity for raw and refined oil.</p>
+        </div>
+      </div>
+      <!-- 07 Solar Plant -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">GREEN ENERGY</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800"></div>
+        <div class="caption">
+          <h3>Solar Powered Unit</h3>
+          <p>Reducing our own carbon footprint.</p>
+        </div>
+      </div>
+      <!-- 08 Skilled Experts -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">OUR EXPERTS</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img src="https://picsum.photos/seed/gyantiexperts/1000/800"></div>
+        <div class="caption">
+          <h3>Technical Team</h3>
+          <p>Managing the manufacturing CRM and logistics.</p>
+        </div>
+      </div>
+      <!-- 09 Feedstock -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">FEEDSTOCK</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img src="https://picsum.photos/seed/gyantifields/1000/800"></div>
+        <div class="caption">
+          <h3>Sourcing Fields</h3>
+          <p>Pure agricultural raw materials.</p>
+        </div>
+      </div>
+      <!-- 10 Refinery -->
+      <div class="gallery-item reveal">
+        <div class="top-badge">REFINERY</div>
+        <div class="internal-watermark">GYANTI BIO DIESEL</div>
+        <div class="img-box"><img
+            src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800"></div>
+        <div class="caption">
+          <h3>Final Purification</h3>
+          <p>Ensuring B100 purity standards.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-links">
+        <div class="logo footer-logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <div class="logo-text">
+            <h1 style="color: white;">Gyanti</h1>
+            <span style="color: var(--gold-light);">Multiservices</span>
+          </div>
+        </div>
+        <p>Leading the green energy revolution in India with innovative bio-fuel and industrial chemical solutions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
+          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
+          <li><a href="product-baseoil.html">Base Oil</a></li>
+          <li><a href="product-grease.html">Premium Grease</a></li>
+          <li><a href="product-masks.html">N95 Masks</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, Hamirpur, UP</p>
+        <p><i class="fas fa-phone"></i> +91 73111 12659</p>
+        <p><i class="fas fa-envelope"></i> contact@gyanti.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gyanti Multiservices Pvt. Ltd. | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 150) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const closeMenu = document.getElementById('close-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    function toggleMenu() {
+      navLinks.classList.toggle('active');
+      const icon = mobileToggle.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    }
+
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', toggleMenu);
+    }
+
+    if (closeMenu) {
+      closeMenu.addEventListener('click', toggleMenu);
+    }
+
+    // Mobile Dropdown Toggle
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          drop.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
