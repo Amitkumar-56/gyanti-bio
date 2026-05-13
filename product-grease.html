@@ -8,6 +8,72 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .product-hero {
+      padding: 10rem 5% 6rem;
+      background: linear-gradient(rgba(10, 47, 31, 0.8), rgba(10, 47, 31, 0.8)),
+        url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=2000');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+    }
+
+    .product-hero h1 {
+      color: white;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      max-width: 1400px;
+      margin: 4rem auto;
+      padding: 0 5%;
+      align-items: center;
+    }
+
+    .product-main-img {
+      width: 100%;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .benefit-item {
+      background: #f0f7ee;
+      padding: 1.5rem;
+      border-radius: 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .benefit-item i {
+      font-size: 1.5rem;
+      color: var(--primary-green);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .benefit-item h5 {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .product-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -46,14 +112,23 @@
     </ul>
   </nav>
 
+  <header class="product-hero">
+    <h6
+      style="color: var(--gold-light); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; margin-bottom: 1rem;">
+      Lubrication Excellence</h6>
+    <h1>Gyanti Premium Grease</h1>
+    <p style="max-width: 700px; margin: 0 auto; opacity: 0.9; font-size: 1.2rem;">High-performance multi-purpose grease
+      for extreme conditions.</p>
+  </header>
+
   <main>
-    <section class="product-layout">
+    <section class="product-container">
       <div class="reveal">
         <img src="assets/images/grease.jpg" alt="Gyanti Premium Grease" class="product-main-img">
       </div>
       <div class="reveal">
-        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Lubricating Performance. <br><span
-            style="color: var(--primary-green);">Powering Progress.</span></h2>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Superior Protection. <br><span
+            style="color: var(--primary-green);">Ultimate Performance.</span></h2>
         <p>Gyanti Premium Quality Grease is engineered for high performance, long life, and maximum protection. Our
           multi-purpose grease is suitable for extreme pressure conditions, high temperatures, and heavy-duty industrial
           applications across multiple sectors including automotive, marine, and construction.</p>
@@ -139,16 +214,6 @@
           <li><a href="products.html">Products</a></li>
           <li><a href="manufacturing.html">Manufacturing</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
-          <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
-          <li><a href="product-baseoil.html">Base Oil</a></li>
-          <li><a href="product-grease.html">Premium Grease</a></li>
-          <li><a href="product-masks.html">N95 Masks</a></li>
         </ul>
       </div>
       <div class="footer-links">
