@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gyanti Multiservices Pvt. Ltd. | Bio-Diesel & Industrial Solutions</title>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --deep-green: #0a2f1f;
+    --primary-green: #1b5e2a;
+    --brand-gold: #e6b422;
+    --gold-light: #f7d44a;
+    --cream-bg: #fefcf5;
+    --dark-charcoal: #1a2a1f;
+    --soft-gray: #4a5b4a;
+    --white: #ffffff;
+    --off-white: #f9f8f3;
+    --shadow-sm: 0 10px 30px -12px rgba(0,0,0,0.1);
+    --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.15);
+    --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--off-white);
+    color: var(--dark-charcoal);
+    overflow-x: hidden;
+    line-height: 1.5;
+  }
+
+  /* Custom scroll */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #e0e7e0; }
+  ::-webkit-scrollbar-thumb { background: var(--primary-green); border-radius: 10px; }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,245,0.96);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+    z-index: 1000;
+    padding: 0.8rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(27,94,42,0.15);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    background: var(--primary-green);
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: var(--gold-light);
+    box-shadow: 0 8px 18px rgba(27,94,42,0.2);
+  }
+  .logo-text h1 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: var(--deep-green);
+    line-height: 1.2;
+  }
+  .logo-text span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primary-green);
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #2d3a2b;
+    transition: var(--transition);
+    letter-spacing: 0.3px;
+  }
+  .nav-links a:hover, .nav-links .active {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--brand-gold);
+    padding-bottom: 4px;
+  }
+  .nav-btn {
+    background: var(--primary-green);
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    color: white !important;
+    font-weight: 700;
+    box-shadow: 0 5px 12px rgba(27,94,42,0.3);
+    transition: var(--transition);
+  }
+  .nav-btn:hover {
+    background: #0e4a1e;
+    transform: translateY(-2px);
+    border-bottom: none !important;
+  }
+
+  /* PAGE TRANSITION & MAIN */
+  .page {
+    display: none;
+    animation: fadeUp 0.45s ease forwards;
+  }
+  .page.active-page {
+    display: block;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  /* HERO SECTION */
+  .hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    padding: 7rem 5% 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(230,180,34,0.12) 0%, rgba(0,0,0,0) 70%);
+    top: -150px;
+    right: -100px;
+    border-radius: 50%;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+  .hero-left h6 {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--primary-green);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .hero-left h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--deep-green);
+    margin-bottom: 1.2rem;
+  }
+  .hero-left h1 span {
+    color: var(--brand-gold);
+  }
+  .hero-desc {
+    font-size: 1rem;
+    color: #3e4d3a;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    line-height: 1.6;
+  }
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--primary-green);
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover {
+    background: #0e4a1e;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .btn-outline {
+    border: 2px solid var(--primary-green);
+    background: transparent;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-outline:hover {
+    background: rgba(27,94,42,0.1);
+    transform: translateY(-2px);
+  }
+  .stats-card {
+    background: white;
+    border-radius: 28px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .stat-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: #6c7a68;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* SECTION GLOBAL */
+  .section {
+    padding: 5rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--deep-green);
+    margin-bottom: 0.8rem;
+  }
+  .section-sub {
+    color: var(--primary-green);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .gold-line {
+    width: 70px;
+    height: 4px;
+    background: var(--brand-gold);
+    margin: 1rem 0 2rem 0;
+    border-radius: 4px;
+  }
+
+  /* ABOUT PAGE GRID */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .about-image {
+    background: linear-gradient(145deg, #d9e6cf, #c1dbc1);
+    border-radius: 40px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+  .director-card {
+    background: white;
+    border-radius: 24px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+  }
+  .director-card:hover {
+    transform: translateY(-6px);
+  }
+
+  /* PRODUCTS */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .product-card {
+    background: white;
+    border-radius: 28px;
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid #eef3e9;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--brand-gold);
+  }
+  .product-icon {
+    font-size: 2.5rem;
+    color: var(--brand-gold);
+    margin-bottom: 1rem;
+  }
+
+  /* CAREERS */
+  .jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .job-item {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* CONTACT FORM */
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+  }
+  .contact-info i {
+    width: 42px;
+    color: var(--primary-green);
+    font-size: 1.4rem;
+  }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    background: white;
+    font-family: inherit;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #102211;
+    color: #dadfcf;
+    padding: 3rem 5% 2rem;
+    margin-top: 2rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  /* responsive */
+  @media (max-width: 900px) {
+    .hero-grid, .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .navbar .nav-btn { display: block; }
+    .section-title { font-size: 1.8rem; } 
+  }
+
+  /* animations on scroll */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#" class="logo" id="logo-home">
+    <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+    <div class="logo-text">
+      <h1>Gyanti Multiservices</h1>
+      <span>Pvt. Ltd. | Bio-Diesel Expert</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+    <li><a href="#" data-page="about" class="nav-link">About Us</a></li>
+    <li><a href="#" data-page="careers" class="nav-link">Careers</a></li>
+    <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+    <li><a href="#" data-page="contact" class="nav-btn">Get Quote <i class="fas fa-arrow-right"></i></a></li>
+  </ul>
+</nav>
+
+<!-- HOME PAGE -->
+<div id="home-page" class="page active-page">
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <h6><i class="fas fa-map-marker-alt"></i> Bharuwa Samerpur, Uttar Pradesh</h6>
+        <h1>India’s Most Trusted <span>Bio-Diesel</span> & Industrial Solutions</h1>
+        <p class="hero-desc">Gyanti Multiservices Pvt. Ltd. – Leading manufacturer of B100 Bio-Diesel, Gyanti Urea (DEF), Industrial Base Oil & N95 masks. ₹116 Cr+ annual revenue, empowering green energy.</p>
+        <div class="btn-group">
+          <a href="#" data-page="contact" class="btn-primary"><i class="fas fa-truck-fast"></i> Get Bulk Quote</a>
+          <a href="https://wa.me/917311112659" class="btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stats-card">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div><div class="stat-number">₹116 Cr+</div><div class="stat-label">Annual Revenue FY 24-25</div></div>
+            <div><div class="stat-number">70%</div><div class="stat-label">Less CO₂ Emission</div></div>
+          </div>
+          <div style="margin-top: 1.5rem;"><div class="stat-number">B100</div><div class="stat-label">Pure Bio-Diesel Grade</div></div>
+          <div style="margin-top: 1.2rem; background:#eef5ea; padding:1rem; border-radius: 20px;"><i class="fas fa-chart-line" style="color:#e6b422;"></i> <strong>IndiaMART Listed | PAN India Supply</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-sub">Flagship Products</span>
+    <h2 class="section-title">Premium Bio-Diesel <span style="color:var(--brand-gold);"> & Industrial Range</span></h2>
+    <div class="gold-line"></div>
+    <div class="product-grid">
+      <div class="product-card"><div class="product-icon"><i class="fas fa-biohazard"></i></div><h3>Gyanti Bio Diesel B100</h3><p>100% pure, ASTM certified. Reduces emissions by 70%, superior cetane rating for heavy engines.</p><strong style="color:#1b5e2a;">Bulk price on request</strong></div>
+      <div class="product-card"><div class="product-icon"><i class="fas fa-water"></i></div><h3>Gyanti Urea (DEF)</h3><p>ISO 22241 compliant diesel exhaust fluid for SCR systems. Essential for BS6 vehicles & fleets.</p></div>
+      <div class="product-card"><div class="product-icon"><i class="fas fa-oil-can"></i></div><h3>Industrial Base Oil</h3><p>High-grade lubricant base oil for machinery, hydraulics, and manufacturing units. Custom grades.</p></div>
+      <div class="product-card"><div class="product-icon"><i class="fas fa-head-side-mask"></i></div><h3>N95 Masks</h3><p>Certified N95 respirators, BIS standard, perfect for industrial safety & healthcare.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#eef4ea; border-radius: 50px 50px 0 0;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div><span class="section-sub">Why choose Gyanti</span><h2 class="section-title">Green Energy <br> Revolutionary</h2><div class="gold-line"></div><p>We source feedstock directly from local farmers, boosting rural economy while producing world-class bio-diesel. Our facility in Bharuwa Samerpur, UP is equipped with transesterification reactors and advanced quality labs.</p><a href="#" data-page="about" class="btn-outline" style="margin-top:1rem; display:inline-block;">Know more →</a></div>
+      <div class="stats-card"><i class="fas fa-chart-simple" style="font-size: 2rem; color:var(--brand-gold);"></i><div class="stat-number">85% ↓ NOx</div><div class="stat-label">with DEF + Bio-diesel combo</div><div class="stat-number mt-3">500+</div><div class="stat-label">Industrial clients across India</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="about-page" class="page">
+  <section class="hero" style="min-height: 50vh; background: #f5faf0;">
+    <div class="hero-grid" style="grid-template-columns:1fr;">
+      <h1 style="font-size: 3rem;">About <span style="color:var(--brand-gold);">Gyanti Multiservices</span></h1>
+      <p>Pioneering sustainable energy solutions in Uttar Pradesh, driving self-reliant India mission.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="about-grid">
+      <div>
+        <span class="section-sub">Our Story</span>
+        <h2 class="section-title">Building a cleaner future since 2010</h2>
+        <div class="gold-line"></div>
+        <p>Gyanti Multiservices Pvt. Ltd. is a recognized bio-diesel manufacturer headquartered in Bharuwa Samerpur, Uttar Pradesh. With a robust turnover of ₹116 crore (FY 2024-25), we are committed to delivering alternative fuels and industrial essentials that meet global standards. Our directors Chandra Bhan Singh and Mamta Singh have led the vision to create a greener, job-oriented ecosystem.</p>
+        <p>We operate under IndiaMART, supplying B100 bio-diesel, DEF (Gyanti Urea), industrial base oil, and N95 masks. Our clientele includes transport fleets, factories, agricultural sectors, and government tenders.</p>
+        <div style="margin-top: 1.5rem;"><i class="fas fa-check-circle" style="color:var(--primary-green);"></i> ISO 9001:2015 compliant processes<br><i class="fas fa-check-circle" style="color:var(--primary-green);"></i> State-of-the-art laboratory & R&D</div>
+      </div>
+      <div class="about-image">
+        <i class="fas fa-industry" style="font-size: 5rem; color: var(--primary-green);"></i>
+        <p style="margin-top:1rem;"><strong>Manufacturing Unit</strong> – Bharuwa Samerpur, UP</p>
+        <div class="director-card" style="margin-top: 1rem;"><i class="fas fa-user-tie" style="font-size: 1.8rem;"></i><h3>Chandra Bhan Singh</h3><p>Managing Director</p><p style="font-size:0.8rem;">+91 73111 12659</p></div>
+        <div class="director-card"><i class="fas fa-user" style="font-size: 1.8rem;"></i><h3>Mamta Singh</h3><p>Director – Operations</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CAREERS PAGE -->
+<div id="careers-page" class="page">
+  <section class="hero" style="min-height: 40vh; background: #eef3ea;">
+    <div class="hero-grid" style="grid-template-columns:1fr; text-align:center;">
+      <h1>Join the <span style="color:var(--brand-gold);">Green Revolution</span></h1>
+      <p>We are looking for passionate individuals to drive India’s bio-fuel mission. Explore openings.</p>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Current Openings</h2>
+    <div class="gold-line"></div>
+    <div class="jobs-list">
+      <div class="job-item"><div><h3>Production Manager (Bio-Diesel)</h3><p>Location: Bharuwa Samerpur, UP | Full-time</p><span style="background:#e6f0e3; padding:4px 12px; border-radius:40px;">Exp: 5+ years</span></div><a href="#" data-page="contact" class="btn-primary" style="padding:0.5rem 1.2rem;">Apply Now</a></div>
+      <div class="job-item"><div><h3>Sales & Business Development (Industrial Fuels)</h3><p>Pan India | 3+ years in lubricants/energy sector</p></div><a href="#" data-page="contact" class="btn-primary" style="padding:0.5rem 1.2rem;">Apply</a></div>
+      <div class="job-item"><div><h3>Quality Control Analyst</h3><p>Chemistry background, knowledge of ASTM/ISO methods</p></div><a href="#" data-page="contact" class="btn-primary" style="padding:0.5rem 1.2rem;">Apply</a></div>
+      <div class="job-item"><div><h3>Logistics Coordinator</h3><p>Handle tanker dispatches, supply chain management</p></div><a href="#" data-page="contact" class="btn-primary" style="padding:0.5rem 1.2rem;">Apply</a></div>
+    </div>
+    <div style="margin-top: 3rem; background: #fff5e3; border-radius: 28px; padding: 2rem; text-align: center;">
+      <i class="fas fa-envelope-open-text" style="font-size: 2rem; color:var(--brand-gold);"></i>
+      <h3>Don’t see a suitable role?</h3>
+      <p>Send your CV to careers@gyanti.in and we’ll keep your profile for future opportunities.</p>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="contact-page" class="page">
+  <section class="hero" style="min-height: 45vh;">
+    <div class="hero-grid">
+      <div><h1>Get in <span style="color:var(--brand-gold);">Touch</span></h1><p>Bulk orders, franchise queries, career applications – our team responds within 4 hours.</p><div class="gold-line"></div>
+      <div style="margin-top:1.5rem;"><i class="fas fa-phone-alt"></i> <strong>+91 73111 12659</strong> <br><i class="fab fa-whatsapp"></i> <strong>+91 79425 38541</strong><br><i class="fas fa-envelope"></i> chandrabhn@gmail.com<br><i class="fas fa-globe"></i> gyanti.in</div>
+      </div>
+      <div class="stats-card">
+        <form id="contactForm">
+          <div class="form-group" style="margin-bottom:1rem;"><input type="text" placeholder="Full Name" required></div>
+          <div class="form-group" style="margin-bottom:1rem;"><input type="tel" placeholder="Mobile Number" required></div>
+          <div class="form-group" style="margin-bottom:1rem;"><input type="email" placeholder="Email (Optional)"></div>
+          <div class="form-group" style="margin-bottom:1rem;"><select><option>Interested in: B100 Bio-Diesel</option><option>Gyanti Urea (DEF)</option><option>Industrial Base Oil</option><option>N95 Masks Bulk</option><option>Careers / Partnership</option></select></div>
+          <div class="form-group" style="margin-bottom:1rem;"><textarea rows="3" placeholder="Quantity, delivery location, requirements..."></textarea></div>
+          <button type="button" class="btn-primary" id="submitContactBtn" style="width:100%; justify-content:center;"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="text-align:center;">
+    <iframe src="https://maps.google.com/maps?q=Bharuwa+Samerpur,+Uttar+Pradesh&output=embed" width="100%" height="300" style="border:0; border-radius: 24px;" allowfullscreen></iframe>
+    <p style="margin-top:1rem;">📌 Gyanti Multiservices Pvt. Ltd., Bharuwa Samerpur, Uttar Pradesh – India</p>
+  </section>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><i class="fas fa-leaf" style="font-size: 2rem; color: var(--gold-light);"></i><p>Gyanti Multiservices Pvt. Ltd. – Empowering India with clean energy & industrial supplies.</p></div>
+    <div><h4>Quick Links</h4><a href="#" data-page="home" style="color:#ccc; text-decoration:none; display:block;">Home</a><a href="#" data-page="about" style="color:#ccc; text-decoration:none;">About</a><a href="#" data-page="careers" style="color:#ccc; text-decoration:none;">Careers</a></div>
+    <div><h4>Products</h4><span>B100 Bio-Diesel</span><span>Gyanti Urea</span><span>Base Oil</span><span>N95 Masks</span></div>
+    <div><h4>Head Office</h4><span>Bharuwa Samerpur, UP</span><span>+91 73111 12659</span><span>chandrabhn@gmail.com</span></div>
+  </div>
+  <hr style="border-color:#2f4d2d; margin: 2rem 0 1rem;">
+  <p style="text-align:center; font-size:0.75rem;">© 2025 Gyanti Multiservices Pvt. Ltd. All rights reserved. | GST, MSME Certified | India’s Bio-Diesel Partner</p>
+</footer>
+
+<script>
+  // multi-page navigation handler
+  const pages = {
+    home: document.getElementById('home-page'),
+    about: document.getElementById('about-page'),
+    careers: document.getElementById('careers-page'),
+    contact: document.getElementById('contact-page')
+  };
+  function showPage(pageId) {
+    Object.keys(pages).forEach(id => {
+      pages[id].classList.remove('active-page');
+    });
+    pages[pageId].classList.add('active-page');
+    // update active nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+      if(link.getAttribute('data-page') === pageId) link.classList.add('active');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  document.querySelectorAll('[data-page]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const page = el.getAttribute('data-page');
+      if(page && pages[page]) showPage(page);
+    });
+  });
+  document.getElementById('logo-home')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    showPage('home');
+  });
+
+  // Contact form submission alert
+  document.getElementById('submitContactBtn')?.addEventListener('click', () => {
+    alert('✅ Thank you! Gyanti team will contact you on +91 73111 12659 within 24 hours.');
+  });
+
+  // scroll reveal animations (fade-up)
+  const faders = document.querySelectorAll('.fade-up');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -20px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, appearOptions);
+  document.querySelectorAll('.product-card, .job-item, .about-grid, .stats-card').forEach(el => {
+    el.classList.add('fade-up');
+    appearOnScroll.observe(el);
+  });
+  // manual class addition because dynamic
+  document.querySelectorAll('.fade-up').forEach(el => appearOnScroll.observe(el));
+  // initial nav active fix
+  if(window.location.hash) showPage('home');
+</script>
+</body>
+</html>
