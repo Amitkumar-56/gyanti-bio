@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,12 @@
       max-width: 900px;
       margin: 0 auto;
     }
+
     .about-hero h1 {
       font-size: 3.5rem;
       margin-bottom: 1.5rem;
     }
+
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -26,14 +29,17 @@
       align-items: center;
       padding: 0 5%;
     }
+
     .about-img-stack {
       position: relative;
     }
+
     .main-img {
       width: 100%;
       border-radius: 40px;
       box-shadow: var(--shadow-lg);
     }
+
     .sub-img {
       position: absolute;
       bottom: -30px;
@@ -43,10 +49,12 @@
       border-radius: 30px;
       box-shadow: var(--shadow-md);
     }
+
     .leadership {
       padding: 6rem 5%;
       background: #f8fcf8;
     }
+
     .leader-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -54,10 +62,12 @@
       max-width: 1200px;
       margin: 3rem auto 0;
     }
+
     .leader-card {
       text-align: center;
       padding: 3rem 2rem;
     }
+
     .leader-avatar {
       width: 150px;
       height: 150px;
@@ -70,12 +80,19 @@
       justify-content: center;
       font-size: 3rem;
     }
+
     @media (max-width: 900px) {
-      .grid-2 { grid-template-columns: 1fr; }
-      .about-img-stack { order: -1; }
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .about-img-stack {
+        order: -1;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -118,18 +135,28 @@
   <main>
     <section class="hero-page">
       <div class="about-hero reveal">
-        <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">Our Mission & Vision</p>
+        <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">Our
+          Mission & Vision</p>
         <h1>Pioneering Renewable Energy Solutions</h1>
-        <p style="font-size: 1.2rem; color: var(--soft-gray);">Founded in 2010, Gyanti Multiservices has grown from a local initiative to a multi-million dollar enterprise dedicated to green energy.</p>
+        <p style="font-size: 1.2rem; color: var(--soft-gray);">Founded in 2010, Gyanti Multiservices has grown from a
+          local initiative to a multi-million dollar enterprise dedicated to green energy.</p>
       </div>
     </section>
 
     <section class="grid-2">
       <div class="reveal">
         <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">A Legacy of Sustainable Innovation</h2>
-        <p style="margin-bottom: 1.5rem;">Gyanti Multiservices Pvt. Ltd. was established with a singular vision: to reduce India's dependency on fossil fuels by providing high-quality, renewable bio-energy solutions. Our journey began in Bharuwa Samerpur, Uttar Pradesh, where we recognized the immense potential of bio-diesel in transforming the logistics and agricultural sectors.</p>
-        <p style="margin-bottom: 1.5rem;">Today, with a turnover of ₹116 Crore, we are not just a manufacturer but a technical partner to hundreds of industries. Our B100 Bio-Diesel is produced through a specialized transesterification process that ensures zero sulfur and significantly lower NOx emissions. We specialize in bulk supplies to transport fleets, construction sites, and manufacturing units across Northern India.</p>
-        <p>Our commitment extends beyond fuel. We have expanded our portfolio to include Gyanti Urea (DEF) to help BS6 vehicles meet environmental standards, and high-grade industrial base oils for heavy-duty machinery. Every product that leaves our facility carries the Gyanti promise of purity and performance.</p>
+        <p style="margin-bottom: 1.5rem;">Gyanti Multiservices Pvt. Ltd. was established with a singular vision: to
+          reduce India's dependency on fossil fuels by providing high-quality, renewable bio-energy solutions. Our
+          journey began in Bharuwa Samerpur, Uttar Pradesh, where we recognized the immense potential of bio-diesel in
+          transforming the logistics and agricultural sectors.</p>
+        <p style="margin-bottom: 1.5rem;">Today, with a turnover of ₹116 Crore, we are not just a manufacturer but a
+          technical partner to hundreds of industries. Our B100 Bio-Diesel is produced through a specialized
+          transesterification process that ensures zero sulfur and significantly lower NOx emissions. We specialize in
+          bulk supplies to transport fleets, construction sites, and manufacturing units across Northern India.</p>
+        <p>Our commitment extends beyond fuel. We have expanded our portfolio to include Gyanti Urea (DEF) to help BS6
+          vehicles meet environmental standards, and high-grade industrial base oils for heavy-duty machinery. Every
+          product that leaves our facility carries the Gyanti promise of purity and performance.</p>
         <div style="margin-top: 2rem; display: flex; gap: 1.5rem;">
           <div style="text-align: center;">
             <h3 style="color: var(--primary-green); font-size: 2.5rem;">15+</h3>
@@ -142,8 +169,8 @@
         </div>
       </div>
       <div class="about-img-stack reveal">
-        <img src="file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_plant_industrial_1778663153038.png" class="main-img" alt="Gyanti Bio-Diesel Plant">
-        <img src="file:///C:/Users/new/.gemini/antigravity/brain/3b3c4d8b-27c2-472f-9733-e7ce0f690db9/biodiesel_lab_testing_1778663179018.png" class="sub-img" alt="QC Laboratory">
+        <img src="assets/images/biodiesel_plant_industrial.png" class="main-img" alt="Gyanti Bio-Diesel Plant">
+        <img src="assets/images/biodiesel_lab_testing_1778663179018.png" class="sub-img" alt="QC Laboratory">
       </div>
     </section>
 
@@ -281,4 +308,5 @@
     });
   </script>
 </body>
+
 </html>

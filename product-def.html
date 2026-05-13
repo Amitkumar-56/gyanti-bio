@@ -108,7 +108,8 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li class="dropdown">
-        <a href="products.html" class="active">Products <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+        <a href="products.html" class="active">Products <i class="fas fa-chevron-down"
+            style="font-size: 0.7rem;"></i></a>
         <ul class="dropdown-menu">
           <li><a href="product-biodiesel.html">Bio-Diesel B100</a></li>
           <li><a href="product-def.html">Gyanti Urea (DEF)</a></li>
@@ -135,9 +136,7 @@
   <main>
     <section class="product-layout">
       <div class="reveal">
-        <img
-          src="file:///C:/Users/new/.gemini/antigravity/brain/3c09e95c-b586-47b9-ba18-f34a11c2c435/media__1778667949078.jpg"
-          alt="Gyanti DEF Urea Expert" class="product-main-img">
+        <img src="assets/images/def_buket.png" alt="Gyanti DEF Urea Expert" class="product-main-img">
       </div>
       <div class="reveal">
         <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Protecting Engines. <br><span
@@ -315,7 +314,7 @@
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
 
-    if(mobileToggle && navLinks) {
+    if (mobileToggle && navLinks) {
       mobileToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         const icon = mobileToggle.querySelector('i');
