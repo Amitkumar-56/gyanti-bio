@@ -6,168 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyanti Multiservices | Bio-Diesel & Industrial Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/chemenergy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 4rem;
-            align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .hero-content h6 {
-            color: var(--primary-green);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .hero-content h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-content h1 span {
-            background: linear-gradient(to right, var(--primary-green), var(--brand-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .floating-badge {
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            background: var(--brand-gold);
-            color: var(--deep-green);
-            padding: 1.5rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow-md);
-            font-weight: 800;
-            z-index: 100;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .features {
-            padding: 8rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-header h2 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .feature-card {
-            text-align: center;
-        }
-
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: #f0f7ee;
-            color: var(--primary-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            border-radius: 20px;
-            margin: 0 auto 1.5rem;
-            transition: var(--transition);
-        }
-
-        .feature-card:hover .feature-icon {
-            background: var(--primary-green);
-            color: white;
-            transform: rotateY(180deg);
-        }
-
-        .impact-section {
-            background: var(--deep-green);
-            color: white;
-            padding: 8rem 5%;
-            border-radius: 60px;
-            margin: 4rem 5%;
-        }
-
-        .impact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
-            text-align: center;
-        }
-
-        .impact-stat h3 {
-            font-size: 3.5rem;
-            color: var(--gold-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .impact-stat p {
-            font-weight: 600;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        @media (max-width: 900px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-image-card {
-                order: -1;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
         <a href="index.html" class="logo">
-            <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-            <div class="logo-text">
+            <img src="assets/images/gyanti_official_logo.png" alt="Gyanti Biodiesel" class="official-logo">
+            <div class="logo-divider"></div>
+            <div class="logo-text-group">
                 <h1>Gyanti Multiservices</h1>
                 <span>Pvt. Ltd. | Bio-Diesel Expert</span>
             </div>
         </a>
-
-        <div class="mobile-toggle" id="mobile-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-
+        <div class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
         <ul class="nav-links" id="nav-links">
             <li class="mobile-menu-header">
                 <span>Navigation Menu</span>
@@ -193,265 +50,319 @@
     </nav>
 
     <main>
-        <section class="hero-page">
-            <div class="hero-container">
-                <div class="hero-content reveal">
-                    <h6><i class="fas fa-certificate"></i> ISO 9001:2015 Certified Company</h6>
-                    <h1>Fueling a <span>Greener India</span> with Bio-Diesel</h1>
-                    <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--soft-gray);">Gyanti Multiservices
-                        Pvt. Ltd. is India's leading producer of high-grade B100 Bio-Diesel and industrial solutions,
-                        driving sustainability with every drop.</p>
-                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="contact.html" class="btn btn-primary">Start Partnership <i
-                                class="fas fa-arrow-right"></i></a>
-                        <a href="reports.html" class="btn btn-outline">View Impact Reports</a>
+
+        <!-- HERO SECTION - Full width slider like chemenergy -->
+        <section class="ce-hero">
+            <!-- Image Slider Background -->
+            <div class="ce-hero-slider">
+                <div class="ce-slide active">
+                    <img src="assets/images/biodiesel_factory_entrance_gate.png" alt="Gyanti Bio-Diesel Factory">
+                </div>
+                <div class="ce-slide">
+                    <img src="assets/images/biodiesel_plant_industrial.png" alt="Industrial Plant">
+                </div>
+                <div class="ce-slide">
+                    <img src="assets/images/biodiesel_lab_testing.png" alt="Quality Lab Testing">
+                </div>
+                <div class="ce-slide">
+                    <img src="assets/images/biodiesel_tanker_logistics.png" alt="Tanker Logistics">
+                </div>
+                <div class="ce-slide">
+                    <img src="assets/images/biodiesel_storage_tanks_bulk_1778663820545.png" alt="Storage Tanks">
+                </div>
+            </div>
+            <!-- Dark Overlay -->
+            <div class="ce-hero-overlay"></div>
+            <!-- Content -->
+            <div class="ce-hero-content">
+                <p class="ce-hero-tagline">ISO 9001:2015 Certified &bull; PAN India Supply Chain</p>
+                <h1>Integrated bio-diesel & industrial solutions platform powering India's sustainable energy
+                    transition.</h1>
+                <div class="ce-hero-btns">
+                    <a href="products.html" class="ce-btn ce-btn-gold">Explore Our Products</a>
+                    <a href="contact.html" class="ce-btn ce-btn-outline">Partner With Us</a>
+                </div>
+            </div>
+            <!-- Slider Dots -->
+            <div class="ce-hero-dots">
+                <span class="ce-dot active" data-slide="0"></span>
+                <span class="ce-dot" data-slide="1"></span>
+                <span class="ce-dot" data-slide="2"></span>
+                <span class="ce-dot" data-slide="3"></span>
+                <span class="ce-dot" data-slide="4"></span>
+            </div>
+        </section>
+
+        <!-- INTRO + STATS like chemenergy -->
+        <section class="ce-intro">
+            <div class="ce-intro-inner">
+                <div class="ce-intro-left">
+                    <p class="ce-label">India's trusted bio-diesel manufacturing platform.</p>
+                    <h2>Established in Bharuwa Samerpur, Uttar Pradesh, Gyanti Multiservices Pvt. Ltd. is an
+                        ISO-certified industrial company delivering scalable bio-fuel and chemical solutions across
+                        Bio-Diesel B100, DEF (Urea), Base Oil, Premium Grease and N95 Masks.</h2>
+                </div>
+                <div class="ce-stats-row">
+                    <div class="ce-stat-item">
+                        <h3>2018</h3>
+                        <p>Established</p>
                     </div>
-                </div>
-                <div class="hero-right reveal">
-                    <div class="slider-container">
-                        <div class="slide active">
-                            <img src="assets/images/biodiesel_factory_entrance_gate.png" alt="Gyanti Bio-Diesel Expert">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/biodiesel_lab_testing.png" alt="Quality Control Lab">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/biodiesel_tanker_logistics.png" alt="Bio-Diesel Logistics">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/bio-diesel.jpg" alt="Gyanti AdBlue / Urea Bulk Supply">
-                        </div>
-                        <div class="slider-dots">
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                        <div class="floating-badge">
-                            <i class="fas fa-bolt"></i> ₹116 Cr+ Revenue
-                        </div>
+                    <div class="ce-stat-item">
+                        <h3>5+</h3>
+                        <p>Product Verticals</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="section-header reveal">
-                <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase;">Our Core Offerings
-                </p>
-                <h2>Eco-Friendly Industrial Powerhouse</h2>
-                <p style="max-width: 800px; margin: 1rem auto; color: var(--soft-gray);">From manufacturing B100
-                    Bio-Diesel to providing essential BS6 compliant additives like DEF (Diesel Exhaust Fluid), Gyanti
-                    Multiservices is at the forefront of India's green energy mission.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="card feature-card reveal">
-                    <div class="feature-icon"><i class="fas fa-gas-pump"></i></div>
-                    <h3>Bio-Diesel B100</h3>
-                    <p>100% pure ASTM certified bio-diesel that reduces carbon emissions by up to 70%.</p>
-                </div>
-                <div class="card feature-card reveal">
-                    <div class="feature-icon"><i class="fas fa-vial"></i></div>
-                    <h3>Gyanti Urea (DEF)</h3>
-                    <p>High-purity diesel exhaust fluid essential for modern BS6 compliant vehicles.</p>
-                </div>
-                <div class="card feature-card reveal">
-                    <div class="feature-icon"><i class="fas fa-oil-can"></i></div>
-                    <h3>Industrial Base Oil</h3>
-                    <p>Superior quality lubricant base oil for heavy machinery and industrial applications.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="impact-section reveal">
-            <div class="impact-grid">
-                <div class="impact-stat">
-                    <h3>70%</h3>
-                    <p>Carbon Reduction</p>
-                </div>
-                <div class="impact-stat">
-                    <h3>500+</h3>
-                    <p>Industrial Clients</p>
-                </div>
-                <div class="impact-stat">
-                    <h3>PAN</h3>
-                    <p>India Supply Chain</p>
-                </div>
-                <div class="impact-stat">
-                    <h3>B100</h3>
-                    <p>Pure Grade Quality</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="marquee">
-            <div class="marquee-content">
-                <span class="marquee-item">Reliance Industries</span>
-                <span class="marquee-item">Adani Group</span>
-                <span class="marquee-item">Tata Motors</span>
-                <span class="marquee-item">Indian Oil</span>
-                <span class="marquee-item">Bharat Petroleum</span>
-                <span class="marquee-item">Hindustan Petroleum</span>
-                <span class="marquee-item">Jindal Steel</span>
-                <span class="marquee-item">L&T Construction</span>
-                <!-- Duplicate for seamless loop -->
-                <span class="marquee-item">Reliance Industries</span>
-                <span class="marquee-item">Adani Group</span>
-                <span class="marquee-item">Tata Motors</span>
-                <span class="marquee-item">Indian Oil</span>
-                <span class="marquee-item">Bharat Petroleum</span>
-                <span class="marquee-item">Hindustan Petroleum</span>
-                <span class="marquee-item">Jindal Steel</span>
-                <span class="marquee-item">L&T Construction</span>
-            </div>
-        </section>
-
-        <section class="why-choose">
-            <div class="section-header reveal">
-                <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase;">Why Gyanti? </p>
-                <h2>The Excellence Advantage</h2>
-            </div>
-            <div class="why-grid">
-                <div class="why-card reveal">
-                    <i class="fas fa-award"></i>
-                    <h4>Quality First</h4>
-                    <p>Every drop of our Bio-Diesel undergoes rigorous 15-point laboratory testing to ensure ASTM
-                        standards.</p>
-                </div>
-                <div class="why-card reveal">
-                    <i class="fas fa-truck-fast"></i>
-                    <h4>Agile Logistics</h4>
-                    <p>Our dedicated tanker fleet ensures 24/7 delivery across India, keeping your operations running
-                        smoothly.</p>
-                </div>
-                <div class="why-card reveal">
-                    <i class="fas fa-hand-holding-dollar"></i>
-                    <h4>Cost Efficiency</h4>
-                    <p>Lower maintenance costs and better engine longevity compared to traditional fossil fuels.</p>
-                </div>
-                <div class="why-card reveal">
-                    <i class="fas fa-leaf"></i>
-                    <h4>Sustainable Impact</h4>
-                    <p>Partner with us to reduce your corporate carbon footprint and contribute to a cleaner
-                        environment.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <div class="section-header reveal">
-                <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase;">Voices of Trust
-                </p>
-                <h2>What Our Partners Say</h2>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card reveal">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"Switching to Gyanti Bio-Diesel was the best decision for our logistics fleet. We've seen a
-                        noticeable improvement in engine performance and fuel economy."</p>
-                    <div class="client-info">
-                        <div class="client-img">RS</div>
-                        <div>
-                            <h5 style="margin:0;">Rajesh Sharma</h5>
-                            <small>Operations Manager, North Logistics</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"The purity of their DEF (Urea) is unmatched. It has significantly reduced the sensor issues we
-                        were facing with our BS6 heavy-duty vehicles."</p>
-                    <div class="client-info">
-                        <div class="client-img">AM</div>
-                        <div>
-                            <h5 style="margin:0;">Amit Mishra</h5>
-                            <small>Director, Green Transport Solutions</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"Reliable, transparent, and professional. Gyanti Multiservices is more than a vendor; they are a
-                        key partner in our sustainability journey."</p>
-                    <div class="client-info">
-                        <div class="client-img">VP</div>
-                        <div>
-                            <h5 style="margin:0;">Vikram Patel</h5>
-                            <small>Head of Procurement, Industrial Power Corp</small>
-                        </div>
+                    <div class="ce-stat-item">
+                        <h3>PAN India</h3>
+                        <p>Supply Network</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq-section">
-            <div class="section-header reveal">
-                <p style="color: var(--primary-green); font-weight: 700; text-transform: uppercase;">Knowledge Hub |
-                    सामान्य प्रश्न</p>
-                <h2>Common Questions</h2>
-            </div>
-            <div class="faq-item reveal">
-                <div class="faq-question">
-                    What is B100 Bio-Diesel?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    B100 is 100% pure bio-diesel derived from organic sources like vegetable oils or animal fats. It is
-                    a drop-in replacement for traditional diesel that significantly reduces emissions.
-                </div>
-            </div>
-            <div class="faq-item reveal">
-                <div class="faq-question">
-                    Is it compatible with my existing engine?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    Yes, Bio-Diesel can be used in most diesel engines without any modifications. However, for B100, we
-                    recommend checking with your manufacturer, although blends are universally compatible.
-                </div>
-            </div>
-            <div class="faq-item reveal">
-                <div class="faq-question">
-                    What is Gyanti DEF/Urea?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    Diesel Exhaust Fluid (DEF) is a solution used in Selective Catalytic Reduction (SCR) systems to
-                    reduce Nitrogen Oxide (NOx) emissions in modern BS6 diesel engines.
+        <!-- BUSINESS VERTICALS - Card grid like chemenergy -->
+        <section class="ce-verticals">
+            <div class="ce-verticals-inner">
+                <p class="ce-section-label">Delivering diversified, quality-certified industrial solutions across
+                    high-growth energy segments.</p>
+                <div class="ce-verticals-grid">
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-gas-pump"></i></div>
+                        <h3>Bio-Diesel B100</h3>
+                        <p>ASTM-certified 100% pure bio-diesel reducing carbon emissions by 70%, serving major oil
+                            marketing companies and industrial consumers.</p>
+                    </div>
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Gyanti Urea (DEF)</h3>
+                        <p>High-purity diesel exhaust fluid for BS6-compliant vehicles, manufactured under stringent
+                            quality controls for optimal SCR performance.</p>
+                    </div>
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-oil-can"></i></div>
+                        <h3>Industrial Base Oil</h3>
+                        <p>Premium-grade lubricant base oil for heavy machinery, automotive, and industrial applications
+                            with superior viscosity characteristics.</p>
+                    </div>
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Premium Grease</h3>
+                        <p>High-performance industrial grease engineered for extreme conditions, ensuring long-lasting
+                            equipment protection and efficiency.</p>
+                    </div>
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-shield-virus"></i></div>
+                        <h3>N95 Masks</h3>
+                        <p>Medical-grade respiratory protection manufactured under strict quality standards, supporting
+                            healthcare and industrial safety.</p>
+                    </div>
+                    <div class="ce-vertical-card">
+                        <div class="ce-v-icon"><i class="fas fa-truck-fast"></i></div>
+                        <h3>Bulk Supply & Logistics</h3>
+                        <p>Dedicated tanker fleet ensuring 24/7 delivery across India with real-time tracking and
+                            just-in-time supply chain management.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-banner reveal">
-            <h2>Ready to Power Your Business Sustainably?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Join 500+ industrial leaders who have
-                already made the switch to cleaner energy.</p>
-            <a href="contact.html" class="btn btn-primary"
-                style="background: var(--brand-gold); color: var(--deep-green);">Get a Custom Quote <i
-                    class="fas fa-paper-plane"></i></a>
+        <!-- STRATEGIC SECTORS - Scrolling cards like chemenergy -->
+        <section class="ce-sectors">
+            <div class="ce-sectors-inner">
+                <p class="ce-section-label-light">Strategic Sectors</p>
+                <div class="ce-sectors-track">
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Oil Marketing Companies</h4>
+                        <p>Long-term bio-fuel supply partnerships with leading oil marketing institutions across India.
+                        </p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Transport & Logistics</h4>
+                        <p>Sustainable fuel solutions for fleet operators seeking BS6 compliance and carbon reduction.
+                        </p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Industrial Manufacturing</h4>
+                        <p>Comprehensive lubrication and energy solutions for heavy industrial and manufacturing
+                            operations.</p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Construction & Mining</h4>
+                        <p>Bulk bio-diesel and grease supply for construction equipment and mining operations
+                            nationwide.</p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Healthcare & Safety</h4>
+                        <p>N95 masks and protective equipment supporting healthcare infrastructure and workplace safety.
+                        </p>
+                    </div>
+                    <!-- Duplicates for seamless scroll -->
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Oil Marketing Companies</h4>
+                        <p>Long-term bio-fuel supply partnerships with leading oil marketing institutions across India.
+                        </p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Transport & Logistics</h4>
+                        <p>Sustainable fuel solutions for fleet operators seeking BS6 compliance and carbon reduction.
+                        </p>
+                    </div>
+                    <div class="ce-sector-card">
+                        <span class="ce-sector-tag">Industry</span>
+                        <h4>Industrial Manufacturing</h4>
+                        <p>Comprehensive lubrication and energy solutions for heavy industrial and manufacturing
+                            operations.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- PROJECTS SECTION like chemenergy -->
+        <section class="ce-projects">
+            <div class="ce-projects-inner">
+                <p class="ce-section-label">Delivering large-scale industrial solutions across bio-diesel, chemical
+                    processing and integrated supply chain platforms.</p>
+                <div class="ce-projects-grid">
+                    <div class="ce-project-card">
+                        <div class="ce-project-img">
+                            <img src="assets/images/biodiesel_factory_entrance_gate.png"
+                                alt="Bio-Diesel Manufacturing Plant">
+                        </div>
+                        <h3>Bio-Diesel Manufacturing Plant</h3>
+                        <p>State-of-the-art bio-diesel production facility with advanced trans-esterification
+                            technology, 15-point quality testing lab, and high-capacity storage infrastructure.</p>
+                    </div>
+                    <div class="ce-project-card">
+                        <div class="ce-project-img">
+                            <img src="assets/images/biodiesel_lab_testing.png" alt="Quality Control Laboratory">
+                        </div>
+                        <h3>Quality Control Laboratory</h3>
+                        <p>NABL-standard testing laboratory ensuring every batch meets ASTM and BIS quality benchmarks
+                            before dispatch to institutional customers.</p>
+                    </div>
+                    <div class="ce-project-card">
+                        <div class="ce-project-img">
+                            <img src="assets/images/biodiesel_tanker_logistics.png" alt="Logistics & Supply Chain">
+                        </div>
+                        <h3>PAN India Logistics Network</h3>
+                        <p>Dedicated tanker fleet with GPS tracking, ensuring timely bulk delivery across 25+ districts
+                            with just-in-time supply chain management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPETITIVE ADVANTAGES like chemenergy "Why" section -->
+        <section class="ce-advantages">
+            <div class="ce-advantages-inner">
+                <p class="ce-section-label">Building India's most trusted integrated bio-diesel platform through quality
+                    innovation, operational excellence and disciplined execution.</p>
+                <div class="ce-advantages-grid">
+                    <div class="ce-adv-card">
+                        <h3>Quality-Led Manufacturing</h3>
+                        <p>15-point laboratory testing protocol across bio-diesel and DEF production ensuring ASTM
+                            compliance, superior product quality and zero-defect dispatch.</p>
+                    </div>
+                    <div class="ce-adv-card">
+                        <h3>Integrated Product Ecosystem</h3>
+                        <p>Diversified platform spanning Bio-Diesel, DEF, Base Oil, Grease and N95 Masks, maximising
+                            value capture across the industrial supply chain.</p>
+                    </div>
+                    <div class="ce-adv-card">
+                        <h3>Execution-Led Operations</h3>
+                        <p>Proven capability to manufacture, scale and deliver complex industrial products with strong
+                            operational discipline and high capacity utilisation.</p>
+                    </div>
+                    <div class="ce-adv-card">
+                        <h3>Institutional Relationships</h3>
+                        <p>Long-standing partnerships with oil marketing companies, transport fleets and industrial
+                            consumers supported by reliable supply agreements.</p>
+                    </div>
+                    <div class="ce-adv-card">
+                        <h3>PAN India Supply Network</h3>
+                        <p>Strategic supply chain infrastructure spanning 25+ districts with dedicated tanker fleet,
+                            regional hubs and 24/7 delivery capability.</p>
+                    </div>
+                    <div class="ce-adv-card">
+                        <h3>Sustainability Leadership</h3>
+                        <p>70% carbon reduction through bio-diesel adoption, driving India's clean energy mission and
+                            ESG-compliant industrial transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY METRICS counter like chemenergy -->
+        <section class="ce-metrics">
+            <div class="ce-metrics-inner">
+                <p class="ce-section-label">Demonstrating strong execution capability and scalable growth across
+                    bio-diesel, industrial chemicals and integrated supply operations.</p>
+                <div class="ce-metrics-grid">
+                    <div class="ce-metric-item">
+                        <h3>₹116Cr+</h3>
+                        <p>Revenue Achieved</p>
+                    </div>
+                    <div class="ce-metric-item">
+                        <h3>5+</h3>
+                        <p>Product Verticals</p>
+                    </div>
+                    <div class="ce-metric-item">
+                        <h3>500+</h3>
+                        <p>Industrial Clients</p>
+                    </div>
+                    <div class="ce-metric-item">
+                        <h3>25+</h3>
+                        <p>District Coverage</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION like chemenergy -->
+        <section class="ce-cta">
+            <div class="ce-cta-inner">
+                <p>Collaborate with India's leading bio-diesel manufacturing platform delivering quality-certified
+                    industrial solutions across bio-diesel, DEF, base oil and specialty chemicals.</p>
+                <div class="ce-cta-btns">
+                    <a href="contact.html" class="ce-btn ce-btn-gold">Request a Supply Quote</a>
+                    <a href="contact.html" class="ce-btn ce-btn-outline-light">Become a Distribution Partner</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-links">
                 <div class="logo footer-logo">
-                    <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-                    <div class="logo-text">
-                        <h1>Gyanti</h1>
-                        <span>Multiservices</span>
+                    <img src="assets/images/gyanti_official_logo.png" alt="Gyanti Biodiesel" class="official-logo">
+                    <div class="logo-divider"></div>
+                    <div class="logo-text-group">
+                        <h1>Gyanti Multiservices</h1>
+                        <span>Pvt. Ltd. | Bio-Diesel Expert</span>
                     </div>
                 </div>
-                <p>Leading the green energy revolution in India with innovative bio-fuel and industrial chemical
-                    solutions. ISO 9001:2015 Certified Company.</p>
+                <p>India's trusted integrated bio-diesel and industrial solutions platform delivering scalable energy
+                    products across Bio-Diesel B100, DEF, Base Oil, Grease and N95 Masks.</p>
                 <div style="margin-top: 1.5rem;">
-                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-phone" style="color: var(--brand-gold); margin-right: 10px;"></i> +91 73111 12659</p>
-                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-envelope" style="color: var(--brand-gold); margin-right: 10px;"></i> contact@gyanti.in</p>
-                    <p style="font-size: 0.9rem;"><i class="fas fa-map-marker-alt" style="color: var(--brand-gold); margin-right: 10px;"></i> Bharuwa Samerpur, UP</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-phone"
+                            style="color: var(--brand-gold); margin-right: 10px;"></i> +91 73111 12659</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-envelope"
+                            style="color: var(--brand-gold); margin-right: 10px;"></i> contact@gyanti.in</p>
+                    <p style="font-size: 0.9rem;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--brand-gold); margin-right: 10px;"></i> Bharuwa Samerpur, UP</p>
                 </div>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>Company</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -510,88 +421,101 @@
     </footer>
 
     <script>
+        // Reveal on scroll
         function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                if (elementTop < windowHeight - 150) {
-                    reveals[i].classList.add("active");
+            document.querySelectorAll(".ce-reveal").forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                    el.classList.add("active");
                 }
-            }
+            });
         }
         window.addEventListener("scroll", reveal);
         reveal();
 
-        // Navbar scroll effect
+        // Navbar scroll
         window.addEventListener("scroll", function () {
             const nav = document.querySelector(".navbar");
-            if (window.scrollY > 50) {
-                nav.classList.add("scrolled");
-            } else {
-                nav.classList.remove("scrolled");
-            }
+            nav.classList.toggle("scrolled", window.scrollY > 50);
         });
 
-        // Mobile Menu Toggle
+        // Mobile menu
         const mobileToggle = document.getElementById('mobile-toggle');
         const closeMenu = document.getElementById('close-menu');
         const navLinks = document.getElementById('nav-links');
-
         function toggleMenu() {
             navLinks.classList.toggle('active');
             const icon = mobileToggle.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         }
+        if (mobileToggle) mobileToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
 
-        if (mobileToggle && navLinks) {
-            mobileToggle.addEventListener('click', toggleMenu);
-        }
+        // Mobile dropdown
+        document.querySelectorAll('.dropdown').forEach(d => {
+            d.addEventListener('click', e => {
+                if (window.innerWidth <= 1024) d.classList.toggle('active');
+            });
+        });
 
-        if (closeMenu) {
-            closeMenu.addEventListener('click', toggleMenu);
-        }
-
-        // Mobile Dropdown Toggle
-        document.querySelectorAll('.dropdown').forEach(drop => {
-            drop.addEventListener('click', (e) => {
-                if (window.innerWidth <= 1024) {
-                    drop.classList.toggle('active');
+        // Counter animation
+        const counters = document.querySelectorAll('.ce-metric-item h3');
+        const observed = new Set();
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !observed.has(entry.target)) {
+                    observed.add(entry.target);
+                    const el = entry.target;
+                    const text = el.textContent;
+                    const num = parseInt(text.replace(/[^0-9]/g, ''));
+                    if (isNaN(num)) return;
+                    const prefix = text.match(/^[^0-9]*/)[0];
+                    const suffix = text.match(/[^0-9]*$/)[0];
+                    let current = 0;
+                    const step = Math.ceil(num / 60);
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= num) { current = num; clearInterval(timer); }
+                        el.textContent = prefix + current + suffix;
+                    }, 25);
                 }
             });
-        });
+        }, { threshold: 0.5 });
+        counters.forEach(c => observer.observe(c));
 
-        // Slider Logic
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        let currentSlide = 0;
+        // Hero Image Slider
+        const ceSlides = document.querySelectorAll('.ce-slide');
+        const ceDots = document.querySelectorAll('.ce-dot');
+        let currentCeSlide = 0;
 
-        function showSlide(n) {
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
+        function showCeSlide(n) {
+            ceSlides.forEach(s => s.classList.remove('active'));
+            ceDots.forEach(d => d.classList.remove('active'));
+            currentCeSlide = (n + ceSlides.length) % ceSlides.length;
+            ceSlides[currentCeSlide].classList.add('active');
+            ceDots[currentCeSlide].classList.add('active');
         }
 
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
+        setInterval(() => showCeSlide(currentCeSlide + 1), 5000);
 
-        setInterval(nextSlide, 5000);
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const item = q.parentElement;
-                item.classList.toggle('active');
+        ceDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                showCeSlide(parseInt(dot.dataset.slide));
             });
         });
+
+        // Sectors auto-scroll
+        const track = document.querySelector('.ce-sectors-track');
+        if (track) {
+            let scrollPos = 0;
+            function autoScroll() {
+                scrollPos += 0.5;
+                if (scrollPos >= track.scrollWidth / 2) scrollPos = 0;
+                track.scrollLeft = scrollPos;
+                requestAnimationFrame(autoScroll);
+            }
+            autoScroll();
+        }
     </script>
 </body>
 

@@ -1,0 +1,103 @@
+/* ========== INNER PAGES THEME FIX ========== */
+
+/* Page Hero Banners - Dark Navy */
+.hero-page,
+.product-hero,
+.contact-hero,
+.about-hero-section {
+    background: linear-gradient(135deg, rgba(10, 22, 40, 0.7), rgba(15, 36, 64, 0.7)) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.hero-page {
+    background: linear-gradient(135deg, #0a1628 0%, #0f2440 50%, #0a1628 100%) !important;
+}
+
+.hero-page::before {
+    background: radial-gradient(circle, rgba(200, 169, 81, 0.06) 0%, transparent 70%) !important;
+}
+
+.hero-page h1 {
+    color: #ffffff;
+}
+
+.hero-page p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Leadership / Sections BG */
+.leadership,
+.visit-section {
+    background: var(--off-white) !important;
+}
+
+/* Leader Avatar */
+.leader-avatar {
+    background: linear-gradient(135deg, var(--primary-green), #0f2440) !important;
+}
+
+/* Contact Icon */
+.contact-icon {
+    background: rgba(26, 58, 92, 0.08) !important;
+    color: var(--primary-green) !important;
+}
+
+/* Form Focus */
+.form-control:focus {
+    border-color: var(--brand-gold) !important;
+    box-shadow: 0 0 0 4px rgba(200, 169, 81, 0.1) !important;
+}
+
+/* Product Card hover */
+.product-card {
+    border-radius: 24px !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12) !important;
+}
+
+.learn-more {
+    color: var(--brand-gold) !important;
+    font-weight: 700;
+}
+
+.learn-more:hover {
+    color: var(--primary-green) !important;
+}
+
+/* About page stat numbers */
+.about-stat-num {
+    color: var(--brand-gold) !important;
+}
+
+/* Sub-image border */
+.sub-img {
+    border-color: var(--off-white) !important;
+}
+
+/* Gallery items */
+.gallery-item {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.gallery-item:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Process step numbers */
+.step-number {
+    background: linear-gradient(135deg, var(--primary-green), #0f2440) !important;
+    color: var(--brand-gold) !important;
+}
+
+/* Card global */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1) !important;
+}
